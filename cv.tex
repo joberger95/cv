@@ -1,11 +1,13 @@
-\documentclass[10pt,a4paper,sans]{moderncv}
+\documentclass[10pt,a4paper]{moderncv}
 \moderncvtheme[green]{classic}
-\usepackage[utf8]{inputenc}
-\usepackage[french]{babel}
+\usepackage{hyperref}
+\usepackage[utf8]{inputenc}%
+\usepackage[latin1]{inputenc}%
+\usepackage{lmodern}%
 \usepackage[scale=0.85]{geometry} % La taille pris par le contenu, ici on a 15% de marges.
 \nopagenumbers{} % Permet de masquer les numéros de page
 \moderncvicons{awesome}
-\usepackage{hyperref}
+
 \hypersetup{
    pdfauthor   = {Moi},
    pdftitle    = {C V},
@@ -20,19 +22,18 @@
 \title{Etudiant ingénieur}
 \firstname{Jordan}
 \familyname{BERGER}
-\address{9 rue Blaise Pascal}{33400 TALENCE}
+\address{14 rue Louis Liard}{33000 Bordeaux}
 \mobile{06 48 20 09 53}
 \email{jordan.berger@ynov.com}
-\social[linkedin]{Jordan Berger}
+\social[linkedin][www.linkedin.com/in/jordan-berger-1b1814162]{Jordan BERGER}
 \social[github]{joberger95}
 \extrainfo{\\}
-\extrainfo{25 ans\\Permis A,B\\non véhiculé}
+\extrainfo{25 ans\\Permis A,B\\Non véhiculé}
  
 \begin{document}
-\maketitle
- 
-\section{Expériences professionnelles}
+\maketitle{}
 
+\section{Expériences professionnelles}
 \cventry{2016--2019}{Equipier polyvalent}{McDonald's}{Saran-Loiret, Rouen--Seine-Maritime}%
             {}{}
 
@@ -57,7 +58,7 @@
 
 \section{Compétences}
 
-\cvitem{Langages}{C/C++,Python,uPython}
+\cvitem{Langages}{C/C++,Python,$\mu$Python}
 \cvitem{Outils}{GitHub}
 \cvitem{Linux}{
 \begin{itemize}%
@@ -70,7 +71,7 @@
 \item Mise en oeuvre de systèmes
 \item Routage/Soudure
 \item Analogique:transistors, diodes, AOP
-\item Communication: UART, I²C, GSM, GPS-NMEA0183
+\item Communication: UART, I$^2$C, GSM, GPS-NMEA0183
 \item Microcontrôleur: série PIC 18F, ARM Cortex M-4
 \item Servo-moteur 
 \end{itemize}}
@@ -82,12 +83,13 @@
 \section{Projets}
 
 \cventry{}{Projet étude}{Hexapode, premières notions de la robotique, mise en oeuvre}{}%
-            {\href{https://github.com/joberger95/Hexapode}{Lien}}{}
+        {\href{https://github.com/joberger95/Hexapode}{Lien}}{}
 \cventry{}{Projet étude}{Space Invaders, jeux-vidéo embarqué, STM32F4 discovery}{}%
-            {\href{https://github.com/joberger95/space_invaders}{Lien}}{}   
+        {\href{https://github.com/joberger95/space_invaders}{Lien}}{}   
 \cventry{}{Projet étude}{Carte Numérique, centralisation de données, mise en oeuvre  de fonctions}{}%
         {\href{https://github.com/joberger95/projet_BTS}{Lien}}{}  
-\cventry{}{Projet étude}{Psplash, génération de splashscreen personnalisable}{}%
-        {}{}
- 
+\cventry{}{Projet perso'}{OBD,apprentissage et mise en oeuvre de notions Python}{}%
+        {\href{https://github.com/joberger95/OBD}{Lien}}{} 
+
+\fancyfoot[L]{Ecrit en LaTeX}
 \end{document}
